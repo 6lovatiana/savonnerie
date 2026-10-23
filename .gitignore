@@ -1,0 +1,11 @@
+.idea/
+build-file/
+google-adk/.idea
+google-adk/.venv
+socobis-ejb/socobis-ejb.iml
+socobis-ejb/station-ejb2.iml
+socobis-war/socobis-war.iml
+socobis-war/src/socobis-war.iml
+socobis-war/src/java/socobis-war2.iml
+
+/socobis-ejb/build
