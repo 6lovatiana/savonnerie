@@ -7,7 +7,7 @@ socobis-ejb/station-ejb2.iml
 socobis-war/socobis-war.iml
 socobis-war/src/socobis-war.iml
 socobis-war/src/java/socobis-war2.iml
-apj.properties
+socobis-ejb/src/java/apj.properties
 Dockerfile
 README.md
 
