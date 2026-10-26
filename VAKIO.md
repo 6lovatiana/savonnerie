@@ -18,15 +18,15 @@ Le dépôt contient aussi des scripts SQL, un générateur de codes-barres et un
 
 ## 2. Technologies
 
-| Élément | Technologie observée | Rôle |
-|---|---|---|
-| Serveur | Java 8, Java EE 7, EJB et Servlets | Logique métier et traitements serveur |
-| Interface | JSP, JavaScript, jQuery, Bootstrap/AdminLTE et CSS/LESS | Pages web et interactions |
-| Base de données | Oracle SQL, pilote JDBC Oracle | Données de gestion et vues métier |
-| Rapports | JasperReports | Éditions et documents PDF |
-| Construction | Apache Ant, bibliothèques JAR locales | Compilation et préparation du déploiement |
-| Serveur applicatif visé | WildFly/JBoss 10.x | Hébergement de l'application Java EE |
-| Autres outils | Docker, module Python/Google ADK, générateur Java de codes-barres | Déploiement conteneurisé et composants auxiliaires |
+| Élément                | Technologie observée                                               | Rôle                                                |
+| ------------------------ | ------------------------------------------------------------------- | ---------------------------------------------------- |
+| Serveur                  | Java 8, Java EE 7, EJB et Servlets                                  | Logique métier et traitements serveur               |
+| Interface                | JSP, JavaScript, jQuery, Bootstrap/AdminLTE et CSS/LESS             | Pages web et interactions                            |
+| Base de données         | Oracle SQL, pilote JDBC Oracle                                      | Données de gestion et vues métier                  |
+| Rapports                 | JasperReports                                                       | Éditions et documents PDF                           |
+| Construction             | Apache Ant, bibliothèques JAR locales                              | Compilation et préparation du déploiement          |
+| Serveur applicatif visé | WildFly/JBoss 10.x                                                  | Hébergement de l'application Java EE                |
+| Autres outils            | Docker, module Python/Google ADK, générateur Java de codes-barres | Déploiement conteneurisé et composants auxiliaires |
 
 Le module `google-adk` est un exemple Python minimal (fonction d'affichage) et son README indique Python 3.9+ et `google-adk`. Rien dans le code examiné ne montre qu'il soit requis pour lancer l'application SOCOBIS principale.
 
@@ -112,12 +112,13 @@ Pour une prise en main, commencer par obtenir un schéma Oracle de développemen
 
 Cette documentation est une analyse statique du dépôt. Elle ne confirme ni la compilation, ni le démarrage effectif, ni la disponibilité de la base, ni l'exhaustivité des migrations. Les identifiants, adresses réseau et mots de passe ne sont volontairement pas recopiés dans ce document.
 
-
 ## 8. Compilation
+
 $env:Path = "C:\apache-ant-1.10.18\bin;$env:JAVA_HOME\bin;$env:Path"
 ant -f build.xml deploy
 
 ## 9. Déploiement
+
 cd C:\wildfly-10.1.0.Final\bin
 $env:JAVA_HOME = "C:\Program Files\Eclipse Adoptium\jdk-8.0.504.1-hotspot"
 .\standalone.bat

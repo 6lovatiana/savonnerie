@@ -101,9 +101,13 @@
     } catch (Exception e) {
 
         e.printStackTrace();
+        String message = e.getMessage();
+        if (message == null || message.trim().isEmpty()) {
+            message = "Connexion impossible. Vérifiez la connexion Oracle et les identifiants.";
+        }
 %>
 <script language="JavaScript">
-    alert('<%=e.getMessage() %>');
+    alert('<%=message.replace("\\", "\\\\").replace("'", "\\'").replace("\r", " ").replace("\n", " ") %>');
     history.back();
 </script>
 <%
