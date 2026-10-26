@@ -12,4 +12,4 @@ Dockerfile
 README.md
 
 /socobis-ejb/build
-socobis-ejb/src/java/apj.properties
+socobis-war/web/dateBuild.txt
