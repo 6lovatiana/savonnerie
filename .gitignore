@@ -9,3 +9,4 @@ socobis-war/src/socobis-war.iml
 socobis-war/src/java/socobis-war2.iml
 
 /socobis-ejb/build
+socobis-ejb/src/java/apj.properties

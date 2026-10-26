@@ -20,7 +20,7 @@
 
 
     <path id="classpath">
-        <fileset dir="${basedir}\lib">
+        <fileset dir="${basedir}/lib">
             <include name="**/*.jar" />
         </fileset>
     </path>
@@ -70,7 +70,7 @@
             <fileset dir="${webcontent.dir}/WEB-INF/META-INF" />
         </copy>
         <copy todir="${build-socobis-war_war}/WEB-INF/lib/">
-            <fileset dir="${basedir}\lib" />
+            <fileset dir="${basedir}/lib" />
         </copy>
 
         <copy file="../socobis-ejb/src/java/project.properties" tofile="${build-socobis-ejb_jar}/project.properties" />
