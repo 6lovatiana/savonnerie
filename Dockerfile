@@ -30,3 +30,10 @@ EXPOSE 8080 9990
     
 # Démarrer WildFly
 CMD ["/opt/wildfly/bin/standalone.sh", "-b", "0.0.0.0"]
+
+
+
+# ant -f build.xml -Ddeploy.dir="$HOME/wildfly-10.1.0.Final/standalone/deployments"
+# export JAVA_HOME=/usr/lib/jvm/temurin-8-jdk-amd64
+# export PATH="$JAVA_HOME/bin:$PATH"
+# "$HOME/wildfly-10.1.0.Final/bin/standalone.sh"
